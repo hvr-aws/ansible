@@ -7,4 +7,4 @@
   tasks:
   - name: to print vars
     ansible.builtin.debug:
-      msg: "hi I am {{COURSE}}, devops with aws the traine is {{TRAINER}},an d time is {{DURATION}}"
+      msg: "hi I am learning {{COURSE}},and the trainer is {{TRAINER}},and duration is: {{DURATION}}"
