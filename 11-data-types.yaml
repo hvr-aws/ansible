@@ -22,5 +22,6 @@
       - iam
       - s3
   tasks:
+  - name: course info
     ansible.builtin.debug:
-      msg: "i am learning {{course}} with duration {{duration}} and topics are {{topics}} and we use tools {tools{}}"
+      msg: "i am learning {{course}} with duration {{duration}} and topics are {{topics}} and we use tools {{}}"
