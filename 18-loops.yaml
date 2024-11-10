@@ -1,0 +1,13 @@
+- name: install packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: install below
+    ansible.builtin.debug:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name: 'msql', state: 'present'}
+    - { name: 'nginx', state: 'absent'}
+    - { name: 'postfix', state: 'present'}
+    - { name: 'msql', state: 'present'}
