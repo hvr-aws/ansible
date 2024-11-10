@@ -11,8 +11,7 @@
       name: nginx
       state: present
     when: ansible_os_family == "RedHat"
-      msg: "redHat installed"
-
+      
      
   - name: install if Debian
     ansible.builtin.dnf:
