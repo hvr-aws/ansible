@@ -11,7 +11,7 @@
       name: nginx
       state: present
     when: ansible_os_family == "RedHat"
-      msg:  "redHat installed"
+      msg: "redHat installed"
 
      
   - name: install if Debian
@@ -19,8 +19,7 @@
       name: nginx
       state: present
     when: ansible_os_family == "Debian"
-      msg:  "redHat installed"
-
+      
 
 
 
